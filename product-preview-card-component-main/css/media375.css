@@ -1,0 +1,28 @@
+@media (max-width: 376px) {
+
+    .container-card {
+        flex-direction: column;
+        margin: 15px auto;
+        width: 91%;
+        height: 600px; 
+    }
+    
+    .img-card {
+        flex: 40%;
+        background-image: url("../images/image-product-mobile.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .info-card {
+        flex: 60%;
+        padding: 20px 25px;
+    }
+    
+    .info-card h2{
+        line-height: 100%;
+    }
+    
+}

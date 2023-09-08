@@ -5,11 +5,22 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     background-color: hsl(30, 38%, 92%);
     color: hsl(228, 12%, 48%);
+}
+
+main {
+    height: calc(100% - 10px);
 }
 
 
@@ -100,4 +111,8 @@ p {
 .info-card button:hover {
     background-color:  hsl(158, 55%, 25%);
     border: 2px solid hsl(158, 55%, 25%);
+}
+
+.attribution {
+    height: 20px;
 }
