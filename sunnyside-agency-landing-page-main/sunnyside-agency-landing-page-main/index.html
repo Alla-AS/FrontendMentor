@@ -7,7 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,36 +16,88 @@
   </style>
 </head>
 <body>
-  <!-- <header>
-    <div class="heading">
+  <header>
+    <!-- <div class="heading">
       <img src="./images/logo.svg" alt="logo">
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
       </ul>
-    </div>
-  </header> -->
-  About
-  Services
-  Projects
-  Contact
+    </div> -->
+    <!-- <h1>We are creatives</h1> -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1>We are creatives</h1>
+    <img class="arrow" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+    <!-- <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+        </div>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">About</a></li>
+          <li><a href="#" class="nav-link px-2">Services</a></li>
+          <li><a href="#" class="nav-link px-2">Projects</a></li>
+          <li><a href="#" class="nav-link px-2">Contact</a></li>
+        </ul>
+      </header>
+    </div> -->
+  </header>
+  <main>
+    <section class="about">
+      <div class="grid-container">
+        <div class="learn_more">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
 
-  We are creatives
+          <a href="#"> Learn more </a>
+        </div>
+        <img src="./images/desktop/image-transform.jpg" alt="image-transform">
+        <img src="./images/desktop/image-stand-out.jpg" alt="image-stand-out">
+        <div class="learn_more">
+          <h2>Stand out to the right audience</h2>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a class="ping" href="#">Learn more</a> 
+        </div>
 
-  Transform your brand
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+      </div>
+    </section>
+  </main>
+  
 
-  Learn more
+  
 
-  Stand out to the right audience
+  
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
 
   Graphic design
   Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
@@ -75,5 +128,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Alla-AS">Alla-AS</a>.
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
