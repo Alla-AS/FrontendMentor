@@ -11,14 +11,21 @@ body {
   color: hsl(212, 27%, 19%);
 }
 
+p {
+  font-family: 'Barlow', sans-serif;
+  margin-bottom: 0;
+}
+
 header {
   /* width: 100%; */
   background-color: hsla(199, 99%, 59%, 0.944);
-  height: 670px;
+  height: 800px;
   background-image: url(../images/desktop/image-header.jpg);
   background-size: cover;
-  background-attachment: inherit;
-  background-position: 0 -130px;
+  /* background-attachment: inherit; */
+  background-position: center;
+
+  /* background-position: 0 -130px; */
   text-align: center;
 }
 
@@ -26,46 +33,53 @@ h1 {
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 900;
-  /* text-align: center; */
-  margin: 60px 0px 70px;
+  margin: 2em 0px 1.8em;
 }
 
 header .arrow{
-  height: 100px;
+  height: 120px;
 }
 
-.grid-container {
-  /* width: 100%; */
+.grid-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.grid-container img{
-  /* width: 100%; */
-}
 
 .learn_more {
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
   align-items: start;
-  justify-content: center;
-  margin: 0 100px 0 140px;
+  /* justify-content: space-around; */
+  margin: 25% 18% ;
+}
+
+.image-transform {
+  background-image: url(../images/desktop/image-transform.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image-stand-out {
+  background-image: url(../images/desktop/image-stand-out.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .learn_more h2 {
-  font-size: 46px;
+  font-size: 42px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .learn_more p {
-  font-family: 'Barlow', sans-serif;
-  font-size: 19px;
-  color:hsl(213, 9%, 39%);
+  font-size: 18px;
+  color: hsl(210, 4%, 67%);
 }
 
 .learn_more a {
@@ -75,21 +89,17 @@ header .arrow{
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 40%;
   padding: 0px 8px;
-  /* text-decoration-color: hsl(62, 100%, 75%); */
-  /* text-decoration-thickness: 10px; */
-  /* color: ; */
 }
 
 .learn_more a::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 150%; /* Регулируйте это значение, чтобы установить высоту подчеркивания */
+  height: 40%; /* Регулируйте это значение, чтобы установить высоту подчеркивания */
   background-color: hsl(54, 100%, 85%); /* Цвет подчеркивания */
   border-radius: 5px;
-  bottom: -10px;
+  bottom: 1px;
   left: 0;
   z-index: -1; /* Чтобы подчеркивание было под текстом */
 }
@@ -98,4 +108,43 @@ header .arrow{
   background-color: hsl(8, 66%, 91%);
 }
 
+.grid-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service:first-child {
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service:nth-child(2) {
+  background-image: url(../images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service {
+  padding: 60% 25% 8%;
+  text-align: center;
+}
+
+.service h3 {
+  color:hsl(167, 40%, 24%);
+  font-weight: 900;
+  margin-bottom: 10%;
+}
+.service p {
+  color:hsl(167, 27%, 34%);
+}
+
+.service:nth-child(2) h3 {
+  color:hsl(198, 62%, 26%);
+}
+.service:nth-child(2) p {
+  color:hsl(198, 43%, 32%);
+}
 
