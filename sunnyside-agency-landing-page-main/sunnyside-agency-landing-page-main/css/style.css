@@ -11,6 +11,10 @@ body {
   color: hsl(212, 27%, 19%);
 }
 
+h2, h3, h4 {
+  margin-bottom: 0;
+}
+
 p {
   font-family: 'Barlow', sans-serif;
   margin-bottom: 0;
@@ -38,9 +42,13 @@ h1 {
   margin: 2em 0px 1.8em;
 }
 
+/* Header */
+
 header .arrow{
   height: 120px;
 }
+
+/* Секция About */
 
 .grid-about {
   display: grid;
@@ -48,9 +56,9 @@ header .arrow{
   grid-template-rows: 1fr 1fr;
 }
 
-
 .learn_more {
-  display: flex;
+  display
+  : flex;
   flex-direction: column;
   gap: 40px;
   align-items: start;
@@ -108,6 +116,8 @@ header .arrow{
   background-color: hsl(8, 66%, 91%);
 }
 
+/* Секция Services */
+
 .grid-services {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -128,17 +138,19 @@ header .arrow{
 }
 
 .service {
-  padding: 60% 25% 8%;
+  padding: 55% 25% 8%;
   text-align: center;
 }
 
 .service h3 {
   color:hsl(167, 40%, 24%);
   font-weight: 900;
-  margin-bottom: 10%;
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 .service p {
   color:hsl(167, 27%, 34%);
+  font-size: 17px;
 }
 
 .service:nth-child(2) h3 {
@@ -148,3 +160,90 @@ header .arrow{
   color:hsl(198, 43%, 32%);
 }
 
+/* Секция Projects */
+
+.projects {
+  /* height: 100%; */
+  box-sizing: border-box;
+}
+
+.grid-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  column-gap: 2%;
+  row-gap: 30px;
+  text-align: center;
+  /* align-items: center; */
+  margin: 10% 10%;
+
+}
+.grid-projects h2 {
+  grid-column: 1/4;
+  color: hsl(210, 4%, 67%);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  /* line-height: 80%; */
+  font-size: 21px;
+}
+
+.card-testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card-testimonial div:last-child {
+  align-items: flex-end;
+}
+
+.card-testimonial .client-foto{
+  background-size: cover;
+  border-radius: 50%;
+  min-width: 80px;
+  min-height: 80px;
+  width: 15%;
+  /* height: 0; */
+  padding-bottom: 15%;
+  margin: 0 auto;
+}
+
+.card-testimonial:nth-child(2) .client-foto {
+  background-image: url('../images/image-emily.jpg');
+}
+
+.card-testimonial:nth-child(3) .client-foto {
+  background-image: url('../images/image-thomas.jpg');
+}
+
+.card-testimonial:nth-child(4) .client-foto {
+  background-image: url('../images/image-jennie.jpg');
+}
+
+.card-testimonial p {
+  font-size: 19px;
+  color: hsl(213, 9%, 39%);
+}
+
+.card-testimonial h3 {
+  font-size: 19px;
+  color: hsl(213, 9%, 39%);
+  margin-bottom: 10px;
+}
+
+.card-testimonial h4 {
+  font-size: 14px;
+  color: hsl(210, 4%, 67%);
+}
+
+/* Footer */
+
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-images img {
+  /* height: 100%; */
+  width: 100%;
+}
